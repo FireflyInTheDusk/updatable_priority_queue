@@ -76,6 +76,16 @@ namespace better_priority_queue {
 					return {false, 0};
 				}
 
+				bool contains(const Key& key) {
+					if(key < id_to_heappos.size()) {
+						size_t pos = id_to_heappos[key];
+						if(pos < ((size_t)-2)) {
+							return true;
+						}
+					}
+					return false;
+				}
+
 				/** Returns true if the key was not inside and was added, otherwise does nothing and returns false
 				 *  If the key was remembered and only_if_unknown is true, does nothing and returns false
 				 * */
