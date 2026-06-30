@@ -1,3 +1,6 @@
+#ifndef TEN0_UPDATABLE_PRIORITY_QUEUE_H
+#define TEN0_UPDATABLE_PRIORITY_QUEUE_H
+
 #include <utility>
 #include <vector>
 
@@ -165,3 +168,4 @@ namespace better_priority_queue {
 				}
 		};
 }
+#endif
